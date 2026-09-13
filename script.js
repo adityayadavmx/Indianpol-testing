@@ -1,2 +1,0 @@
-const menuBtn=document.querySelector('.menu-btn');const mobileMenu=document.querySelector('.mobile-menu');if(menuBtn){menuBtn.addEventListener('click',()=>mobileMenu.classList.toggle('open'));mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mobileMenu.classList.remove('open')))}
-const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('is-visible')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
